@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SweetLifeBakery</title>
+	
+    <style>
+       
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        
+        #navigation {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: white;
+          padding: 10px;
+        }
+        
+        #navigation p {
+          margin-left: 20px;
+        }
+        
+       
+        .navbar {
+            display: flex;
+            margin-right: 250px;
+        }
+        
+        .navbar a {
+          text-decoration: none;
+          color: white;
+          padding: 10px 20px;
+          margin-right: 100px;
+          
+        }
+        
+        
+        .navbar img {
+          width: 60px;
+          height: 60px;
+         
+          border-radius: 500px;
+        }
+        #background{
+            background-color: #B88F4D;
+            height: 639px;
+        }
+        .herosection h1{
+            position: relative; 
+             top: 200px; 
+            left: 227px;
+            font-size: 64px;
+        }
+        .herosection p{
+            position: relative; 
+             top: 230px; 
+            left: 227px;
+            color: white;
+        }
+       .herosection #ordernow{
+            position: relative; 
+             bottom: 150px;
+             left: 227px;
+             color: white;
+             background-color: #2B261F;
+             /*padding: 10px;*/
+             border-radius: 10px;
+             padding-top: 20px;
+             padding-bottom: 20px;
+             padding-right: 40px;
+             padding-left: 40px;
+        }
+        .herosection img{
+            width: 457px;
+            height: 447px;
+            position: relative;
+            left: 700px;
+        bottom: 100px;
+            border-radius: 228px;
+            
+
+        }
+
+        #lora, #david, #stephanie {
+            
+    display: inline-block; 
+    width: 20%; 
+    margin: 30px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    vertical-align: top; 
+    background-color: #695C4B;
+    margin-left:125px ;
+    
+}
+
+#lora p, #david p, #stephanie p {
+    margin: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+#lora img, #david img, #stephanie img {
+    width: 60px;
+    height: 58px;
+    border-radius: 500px;
+}
+
+
+#lora p:last-child, #david p:last-child, #stephanie p:last-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.whoarewe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+    margin: auto;
+    padding: 20px;
+    background-color: #E7E7E7;
+}
+
+
+
+.whoarewe-content {
+    width: 40%; 
+}
+
+
+.whoarewe img {
+    width: 50%;
+    
+}
+#one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+#one img {
+    width: 40%; 
+    margin-right: 20px; 
+    
+}
+
+
+#one p {
+    width: 40%; 
+}
+
+
+#three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+#three img {
+    width: 40%; 
+    margin-right: 20px; 
+}
+
+
+#three p {
+    width: 40%; 
+}
+
+#two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+#two p {
+    width: 40%; 
+    margin-right: 20px; 
+}
+
+
+#two img {
+    width: 40%; 
+}
+    .bestsellers h2{
+        margin-top: 20px;
+        text-align: center;
+        color: #821616;
+    }
+
+
+.orderforum {
+    width: 60%; 
+    margin: auto; 
+    text-align: center; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #F5F4F3;
+}
+
+
+
+.orderforum form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+.orderforum label {
+    margin-top: 10px;
+    text-align: left; 
+    width: 100%; 
+}
+
+.orderforum input, .orderforum select {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.orderforum button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2B261F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.orderforum button[type="CANCEL"] {
+    background-color: transparent;
+    border: 1px solid black;
+    color:black;
+}
+
+
+.orderforum button {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    margin: auto; 
+    padding: 20px;
+    background-color: #B88F4D; 
+    border-top: 1px solid #ccc; 
+    margin-top: 20px;
+}
+
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#we {
+    margin-left: 100px;
+}
+
+
+#Contact {
+    text-align: center; 
+    flex: 1; 
+
+}
+
+
+
+#socialmedia {
+    flex: 0 0 30%; 
+    display: flex;
+    justify-content: flex-end; 
+    
+    
+}
+.herosection h1 {
+    color: white;
+}
+.herosection h1 span{
+    color:#2B261F;
+}
+
+h4{
+    font-size: 24px;
+}
+
+
+        </style>
+</head>
+
+<body>
+    <div id="background">
+        
+    <div id="navigation">
+    <p>SweetLife</p>
+	<div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#about">MENU</a>
+        <a href="#services">ABOUT US</a>
+        <a href="#contact">CONTACT</a>
+        <img src="michael-dam-mEZ3PoFGs_k-unsplash.jpg">
+      </div>
+    </div>
+	
+    <div class="herosection">
+        
+     <h1>Freshly <span>Baked</span> <br> 
+        Everyday</h1>
+      <p>From our oven to your door</p>
+      <button id="ordernow">ORDER NOW</button>
+      <img src="mae-mu-_h-2jrL9cMU-unsplash.jpg">
+    </div>
+</div>  
+
+    <div id="container">
+        
+        <div id="lora">
+            <p>
+                Absolutely divine pastries! Every bite feels like a taste of heaven. The croissants are flaky perfection, and the cupcakes are beautifully decorated and delicious. A must-visit bakery for anyone with a sweet tooth!
+            </p>
+            <img src="vince-veras-AJIqZDAUD7A-unsplash.jpg">
+            <p>LORA</p>
+            <p>2023</p>
+        </div>
+        <div id="david">
+            <p>
+                "Freshly baked bread that melts in your mouth! This bakery has a wide variety of bread, from crusty baguettes to soft brioche. The aroma alone is enough to draw you in, and the taste keeps you coming back for more. Highly recommend trying their cinnamon rolls!
+            </p>
+            <img src="joseph-gonzalez-iFgRcqHznqg-unsplash.jpg">
+            <p>DAVID</p>
+            <p>2024</p>
+        </div>
+        <div id="stephanie">
+            <p>
+                Delicious treats and friendly service! I love stopping by for a quick pastry or a warm, gooey cookie. The selection is always fresh, and they have gluten-free options too, which is fantastic. It's a cozy little bakery that feels like home, and I can't get enough of their scones.
+            </p>
+            <img src="zoe-fernandez--zqoE7jnQgw-unsplash.jpg">
+            <p>STEPHANIE</p>
+            <p>2023</p>
+        </div>
+
+        <div class="whoarewe">
+            <div class="whoarewe-content">
+                <h2>WHO ARE WE?</h2>
+                <p>At heart, we are a community bakery, dedicated to bringing joy and satisfaction to our customers. Whether you're celebrating a special occasion or simply craving a sweet indulgence, our bakery is your go-to destination for wholesome goodness and mouthwatering treats. Welcome to our world of irresistible baked delights!</p>
+            </div>
+            <img src="2024-05-11.png" alt="Image Description">
+        </div>
+
+
+        <div class="bestsellers">
+            <h2>THE BESTSELLER.</h2>
+            <div id="one">
+                <img src="luisana-zerpa-MJPr6nOdppw-unsplash.jpg">
+                <p>Indulge in a little piece of happiness with every bite of our heavenly cupcakes!</p>
+            </div>
+            <div id="two">
+                <p>Pancakes that flip your taste buds into blissful delight with every golden bite!</p>
+                <img src="chad-montano-gf9777gaYjs-unsplash.jpg">
+            </div>
+            <div id="three">
+                <img src="american-heritage-chocolate-DoK5qEy2L60-unsplash.jpg">
+                <p>Experience pure joy in every crumb of our freshly baked, melt-in-your-mouth cookies!</p>
+            </div>
+        </div>
+
+        <div class="orderforum">
+            <h4>Place Your Order Here</h4>
+            <form action="/order" method="post">
+
+                <label for="bakery">SELECT PRODUCTS:</label>
+                <select id="cars" name="cars" >
+                  
+                </select>
+
+                <label for="fullname">Fullname</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="addres">Address</label>
+                <input type="text" id="addres" name="addres" required>
+
+                <label for="number">Phone Number</label>
+                <input type="text" id="number" name="number" required>
+
+                <label for="feedback">Your feedback</label>
+                <input type="text"  id="feedback" name="feedback" required style="height:150px">
+            
+                
+                <button type="CANCEL">CANCEL</button>
+                <button type="submit">PAY</button>
+              </form>
+
+
+
+
+
+
+        </div>
+
+        
+
+
+    </div>
+    <div id="footer">
+        <div id="we">
+            <h6>WHO ARE WE</h6>
+            <a href="">About us</a>
+            <a href="">Menu</a>
+            <a href="">Our policies</a>
+
+            
+        </div>
+        <div id="Contact">
+        <H6>WHO ARE WE</H6>
+        <p>9876543210</p>
+        <p>1234 Maple Avenue, Anytown, USA</p>
+        <p>sweetlifeBakery@outlook.com</p>
+
+           </div>
+
+        <div id="socialmedia">
+
+            <h6>STAY IN TOUCH</h6>
+            <img>
+            <img>
+        </div>
+
+    </div>
+
+</body>
+</html>
